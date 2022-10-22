@@ -1,33 +1,44 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import About from './components/about';
-import Resume from './components/resume';
-import Nav from './components/Navbar';
-import Footer from './components/footer';
-import Portfolio from './components/portfolio';
-import Contact from './components/contact';
+import "./App.css";
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
-class App extends Component {
+function App() {
 
-  render() {
-    return (
-          <Router>
-            <Nav />
-              <Routes>
-              <Route exact path="/" component={About} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/portfolio" component={Portfolio} />
-                <Route exact path="/resume" component={Resume} />
-                <Route exact path="/contact" component={Contact} />
-              </Routes>
-              <Footer/>
+	//useState to set the render the navigation if about the render about 
+	const [currentTab, setCurrentTab] = useState("about");
+	const renderTab = () => {
+		switch (currentTab) {
+			case "about":
+				return <About />;
+			case "portfolio":
+				return <Portfolio />;
+			case "contact":
+				return <Contact />;
+			case "resume":
+				return <Resume />;
+			default:
+				return null;
+		}
+	};
 
-          </Router>
-
-    )
-  }
+	return (
+		<div>
+			<div className="mobile-header">
+				<Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
+			</div>
+			<div>
+				<main>{renderTab()}</main>
+			</div>
+			<div>
+				<Footer></Footer>
+			</div>
+		</div>
+	);
 }
 
 export default App;
