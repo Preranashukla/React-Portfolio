@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.77b331eb.css",
+    "main.js": "/React-Portfolio/static/js/main.163b8167.js",
+    "static/js/787.1ed0c42c.chunk.js": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/aboutme.jpg": "/React-Portfolio/static/media/aboutme.b2cd5ef8b3886d10c5c1.jpg",
+    "static/media/musicweekly.PNG": "/React-Portfolio/static/media/musicweekly.b39f505f8dcbc8dd777e.PNG",
+    "static/media/Prerana_Resume_windsor.pdf": "/React-Portfolio/static/media/Prerana_Resume_windsor.70090563d150735266d3.pdf",
+    "static/media/note-taker.png": "/React-Portfolio/static/media/note-taker.704b6d82c169a0e5e3fa.png",
+    "index.html": "/React-Portfolio/index.html",
+    "main.77b331eb.css.map": "/React-Portfolio/static/css/main.77b331eb.css.map",
+    "main.163b8167.js.map": "/React-Portfolio/static/js/main.163b8167.js.map",
+    "787.1ed0c42c.chunk.js.map": "/React-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77b331eb.css",
+    "static/js/main.163b8167.js"
+  ]
+}
